@@ -1,0 +1,3 @@
+:root { --app-bg: #f6f8fa; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: var(--app-bg); }
