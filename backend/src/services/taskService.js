@@ -1,6 +1,10 @@
 const { TaskRepo } = require('../repositories/taskRepo');
 
 const TaskService = {
+  /**
+   * Initialize the service by seeding initial data.
+   * This should be called once at application startup.
+   */
   init() { TaskRepo.seed(); },
 
   list(filter) { return TaskRepo.list(filter); },
