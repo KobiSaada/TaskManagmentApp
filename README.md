@@ -27,13 +27,13 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 ## Table of Contents
 - [Architecture](#architecture)
 - [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
 - [Task Model](#task-model)
 - [REST API](#rest-api)
-- [Getting Started](#getting-started)
-- [Key Files & Responsibilities](#Key-Files-Responsibilities)
-- [Data Flow](#dataflow)
-- [Time Spent](#timespent)
+- [Key Files & Responsibilities](#key-files-responsibilities)
+- [Data Flow](#data-flow)
+- [Time Spent](#time-spent)
 
 
 
@@ -220,7 +220,7 @@ npm run dev
 4. Response arrives; **useTasks** updates state; **Dashboard** re-renders.  
 5. Create/Update/Delete/Toggle follow the same path with respective HTTP verbs.
 
-## ⏱️ Time Spent
+## Time Spent
 
         ~(20 m) — Planning: system design, contracts (API), infra choices, visual design
         ~(55 m) — Backend: Express setup, routes, models, validation (Zod), repository/service layers
