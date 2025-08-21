@@ -64,10 +64,8 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 
 ---
 
-# Example: :page_facing_up:
 
-after you clone this project there is a class call Ex1 main run it in input.txt:
-
+## Folder Structure
         
                 TaskManagementApp/
                 ├─ backend/
@@ -118,21 +116,9 @@ after you clone this project there is a class call Ex1 main run it in input.txt:
                 │ └─ services/
                 │ └─ api.jsx # Axios wrapper for API calls to backend
                 │
-                └─ README.md # Project's readme file
+                └─ README.md # Project's readme file        
 
  
-
-
-
- 
-# Enjoy :grin:
-
-
-
-## Folder Structure
-
-
-
 
 ### Key Files & Responsibilities
 
@@ -196,12 +182,13 @@ after you clone this project there is a class call Ex1 main run it in input.txt:
 
 ## ⏱️ Time Spent
 
-~(20 m) — Planning: system design, contracts (API), infra choices, visual design
-~(55 m) — Backend: Express setup, routes, models, validation (Zod), repository/service layers
-~(45 m) — Frontend scaffold: Vite + React, MUI theme, layout & app shell
-~(40 m) — Task CRUD integration: hooks, API client, data flow
-~(40 m) — UI polish: table, carousel, filters, stats cards, dialogs
-~(20 m) — Verification: cURL checks, error handling, small fixes
-~(20 m) — README & screenshots
+        ~(20 m) — Planning: system design, contracts (API), infra choices, visual design
+        ~(55 m) — Backend: Express setup, routes, models, validation (Zod), repository/service layers
+        ~(45 m) — Frontend scaffold: Vite + React, MUI theme, layout & app shell
+        ~(40 m) — Task CRUD integration: hooks, API client, data flow
+        ~(40 m) — UI polish: table, carousel, filters, stats cards, dialogs
+        ~(20 m) — Verification: cURL checks, error handling, small fixes
+        ~(20 m) — README & screenshots
 
+# Enjoy :grin:
 
