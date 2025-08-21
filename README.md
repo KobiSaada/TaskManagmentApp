@@ -2,6 +2,9 @@
 
 A modern full-stack **Task Management** application: **React (Vite) + Material UI** on the frontend, and **Node.js + Express + Zod** on the backend.  
 Clean dashboard with **table & carousel views**, filters, stats, dialogs for create/edit, and strict server-side validation.
+<img width="682" height="378" alt="addTask" src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" />
+<img width="1272" height="545" alt="TaskCarousel" src="https://github.com/user-attachments/assets/6b237038-92a0-4e45-b2d8-cf6e10662157" />
+<img width="1276" height="608" alt="TaskTable" src="https://github.com/user-attachments/assets/529bb232-d360-482b-b7ee-da61632e45cc" />
 
 ---
 
