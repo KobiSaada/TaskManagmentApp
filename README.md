@@ -1,8 +1,8 @@
-<img src="https://github.com/user-attachments/assets/7c944f2b-c9df-4204-a550-3b9076b67042" alt="helfy_icon" width="40" style="vertical-align: middle; margin-left: 8px;" />
-
+<img src="https://github.com/user-attachments/assets/7c944f2b-c9df-4204-a550-3b9076b67042" alt="helfy_icon" width="40" style="vertical-align: middle; margin-left: 8px;" /> 
 # Task Management App 
 A modern full-stack **Task Management** application: **React (Vite) + Material UI** on the frontend, and **Node.js + Express + Zod** on the backend.  
 Clean dashboard with **table & carousel views**, filters, stats, dialogs for create/edit, and strict server-side validation.
+
 
 ---
 
