@@ -69,23 +69,56 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 after you clone this project there is a class call Ex1 main run it in input.txt:
 
         
-
-        input.txt:
-        alarm_net.xml
-        B-E| # Bayesball
-        B-E|J=T
-        P(B=T|J=T,M=T) A-E # VE
-        P(B=T|J=T,M=T) E-A
-        P(J=T|B=T) A-E-M
-        P(J=T|B=T) M-E-A
-
-        output:
-        yes
-        no
-        0.28417,7,16
-        0.28417,7,16
-        0.84902,7,12
-        0.84902,5,8
+                TaskManagementApp/
+                ├─ backend/
+                │ ├─ package.json
+                │ ├─ package-lock.json
+                │ └─ src/
+                │ ├─ server.js 
+                │ ├─ app.js # Express app wiring (CORS, JSON, routes, errors)
+                │ ├─ routes/
+                │ │ └─ taskRoutes.js # CRUD routes for tasks
+                │ ├─ controllers/
+                │ │ └─ taskController.js 
+                │ ├─ services/
+                │ │ └─ taskService.js # Business logic for tasks
+                │ ├─ repositories/
+                │ │ └─ taskRepo.js # In-memory store for tasks
+                │ ├─ models/
+                │ │ └─ taskModel.js # Zod schemas or any other schemas for validation
+                │ ├─ middleware/
+                │ │ ├─ validate.js # Middleware for input validation
+                │ ├─ utils/
+                │ │ ├─ id.js # Utility for generating IDs (e.g., using `uuid`)
+                │ │ └─ sortAndFilter.js # Helper to sort/filter tasks server-side
+                │ └─ config/ # Optional folder for environment, logger, constants
+                │
+                ├─ frontend/
+                │ ├─ package.json
+                │ ├─ package-lock.json
+                │ ├─ vite.config.js # Vite configuration file
+                │ ├─ index.html # HTML template
+                │ └─ src/
+                │ ├─ main.jsx # Main entry point for React
+                │ ├─ App.jsx # Root component for your app
+                │ ├─ assets/
+                │ │ └─ logo.jpeg # Any static assets, like your logo
+                │ ├─ pages/
+                │ │ └─ Dashboard.jsx # The main screen component
+                │ ├─ components/
+                │ │ ├─ FiltersBar.jsx # Component for filtering tasks
+                │ │ ├─ TaskStatsCards.jsx # Component to show stats (Total/Pending/Completed)
+                │ │ ├─ TaskTable.jsx # Component for displaying tasks in a table
+                │ │ ├─ TaskCarousel.jsx # Carousel view for tasks
+                │ │ ├─ TaskFormDialog.jsx # Dialog for creating or editing tasks
+                │ │ ├─ ConfirmDialog.jsx # Reusable dialog for confirmations (e.g., delete)
+                │ │ └─ ThemeToggle.jsx # Switch for light/dark theme
+                │ ├─ hooks/
+                │ │ └─ useTasks.jsx # Custom hook for handling tasks logic (fetch, add, update)
+                │ └─ services/
+                │ └─ api.jsx # Axios wrapper for API calls to backend
+                │
+                └─ README.md # Project's readme file
 
  
 
@@ -98,56 +131,7 @@ after you clone this project there is a class call Ex1 main run it in input.txt:
 
 ## Folder Structure
 
-TaskManagementApp/
-├─ backend/
-│ ├─ package.json
-│ ├─ package-lock.json
-│ └─ src/
-│ ├─ server.js 
-│ ├─ app.js # Express app wiring (CORS, JSON, routes, errors)
-│ ├─ routes/
-│ │ └─ taskRoutes.js # CRUD routes for tasks
-│ ├─ controllers/
-│ │ └─ taskController.js 
-│ ├─ services/
-│ │ └─ taskService.js # Business logic for tasks
-│ ├─ repositories/
-│ │ └─ taskRepo.js # In-memory store for tasks
-│ ├─ models/
-│ │ └─ taskModel.js # Zod schemas or any other schemas for validation
-│ ├─ middleware/
-│ │ ├─ validate.js # Middleware for input validation
-│ ├─ utils/
-│ │ ├─ id.js # Utility for generating IDs (e.g., using `uuid`)
-│ │ └─ sortAndFilter.js # Helper to sort/filter tasks server-side
-│ └─ config/ # Optional folder for environment, logger, constants
-│
-├─ frontend/
-│ ├─ package.json
-│ ├─ package-lock.json
-│ ├─ vite.config.js # Vite configuration file
-│ ├─ index.html # HTML template
-│ └─ src/
-│ ├─ main.jsx # Main entry point for React
-│ ├─ App.jsx # Root component for your app
-│ ├─ assets/
-│ │ └─ logo.jpeg # Any static assets, like your logo
-│ ├─ pages/
-│ │ └─ Dashboard.jsx # The main screen component
-│ ├─ components/
-│ │ ├─ FiltersBar.jsx # Component for filtering tasks
-│ │ ├─ TaskStatsCards.jsx # Component to show stats (Total/Pending/Completed)
-│ │ ├─ TaskTable.jsx # Component for displaying tasks in a table
-│ │ ├─ TaskCarousel.jsx # Carousel view for tasks
-│ │ ├─ TaskFormDialog.jsx # Dialog for creating or editing tasks
-│ │ ├─ ConfirmDialog.jsx # Reusable dialog for confirmations (e.g., delete)
-│ │ └─ ThemeToggle.jsx # Switch for light/dark theme
-│ ├─ hooks/
-│ │ └─ useTasks.jsx # Custom hook for handling tasks logic (fetch, add, update)
-│ └─ services/
-│ └─ api.jsx # Axios wrapper for API calls to backend
-│
-└─ README.md # Project's readme file
+
 
 
 ### Key Files & Responsibilities
