@@ -80,7 +80,7 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 
 ---
 
-## Getting Started
+### Getting Started
 
 Follow these steps to **clone and run** the project locally:
 
@@ -97,11 +97,12 @@ npm run dev
 # 3. Start the backend (in a new terminal)
 cd ../backend
 npm install
-npm run dev```md
+npm run dev
+```
+---
 
 
-
-## Folder Structure
+### Folder Structure
         
                 TaskManagementApp/
                 ├─ backend/
