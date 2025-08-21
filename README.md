@@ -11,15 +11,15 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 
 <p align="center" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
   <span style="display:inline-flex; flex-direction:column; align-items:center;">
-    <img src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" alt="addTask" width="300" />
+    <img src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" alt="addTask" width="290" />
     
   </span>
   <span style="display:inline-flex; flex-direction:column; align-items:center;">
-    <img src="https://github.com/user-attachments/assets/529bb232-d360-482b-b7ee-da61632e45cc" alt="TaskTable" width="300" />
+    <img src="https://github.com/user-attachments/assets/529bb232-d360-482b-b7ee-da61632e45cc" alt="TaskTable" width="290" />
     
   </span>
   <span style="display:inline-flex; flex-direction:column; align-items:center;">
-    <img src="https://github.com/user-attachments/assets/6b237038-92a0-4e45-b2d8-cf6e10662157" alt="TaskCarousel" width="300" />
+    <img src="https://github.com/user-attachments/assets/6b237038-92a0-4e45-b2d8-cf6e10662157" alt="TaskCarousel" width="290" />
   </span>
 </p>
 
