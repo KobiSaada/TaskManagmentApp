@@ -86,7 +86,7 @@ Follow these steps to **clone and run** the project locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YourUsername/TaskManagementApp.git
+git clone https://github.com/KobiSaada/TaskManagementApp.git
 cd TaskManagementApp
 
 # 2. Start the frontend
@@ -98,6 +98,8 @@ npm run dev
 cd ../backend
 npm install
 npm run dev
+
+
 
 ## Folder Structure
         
