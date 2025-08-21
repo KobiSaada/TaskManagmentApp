@@ -1,5 +1,5 @@
-# Task Management App <img src="https://github.com/user-attachments/assets/7c944f2b-c9df-4204-a550-3b9076b67042" alt="helfy_icon" width="40" style="vertical-align: middle; margin-left: 8px;" />
-
+<img src="https://github.com/user-attachments/assets/7c944f2b-c9df-4204-a550-3b9076b67042" alt="helfy_icon" width="40" style="vertical-align: middle; margin-left: 8px;" />
+# Task Management App 
 A modern full-stack **Task Management** application: **React (Vite) + Material UI** on the frontend, and **Node.js + Express + Zod** on the backend.  
 Clean dashboard with **table & carousel views**, filters, stats, dialogs for create/edit, and strict server-side validation.
 
@@ -9,16 +9,15 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 
 <p align="center" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
   <span style="display:inline-flex; flex-direction:column; align-items:center;">
-    <img src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" alt="addTask" width="250" />
-    <sub><b>addTask.png</b></sub>
+    <img src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" alt="addTask" width="300" />
+    
   </span>
   <span style="display:inline-flex; flex-direction:column; align-items:center;">
-    <img src="https://github.com/user-attachments/assets/529bb232-d360-482b-b7ee-da61632e45cc" alt="TaskTable" width="250" />
-    <sub><b>TaskTable.png</b></sub>
+    <img src="https://github.com/user-attachments/assets/529bb232-d360-482b-b7ee-da61632e45cc" alt="TaskTable" width="300" />
+    
   </span>
   <span style="display:inline-flex; flex-direction:column; align-items:center;">
-    <img src="https://github.com/user-attachments/assets/6b237038-92a0-4e45-b2d8-cf6e10662157" alt="TaskCarousel" width="250" />
-    <sub><b>TaskCarousel.png</b></sub>
+    <img src="https://github.com/user-attachments/assets/6b237038-92a0-4e45-b2d8-cf6e10662157" alt="TaskCarousel" width="300" />
   </span>
 </p>
 
