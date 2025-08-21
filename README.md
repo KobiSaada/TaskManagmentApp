@@ -156,6 +156,23 @@ npm run dev
                 └─ README.md      
 
  
+## Task Model
+
+Each task in the system follows this structure:
+
+```json
+{
+  "id": "string",            // Unique identifier (UUID)
+  "title": "string",        
+  "description": "string",   /
+  "priority": "low | medium | high",  // Priority level
+  "status": "pending | completed",    // Current status
+  "dueDate": "ISO date string",       
+  "tags": ["string"],        
+  "createdAt": "ISO date string",     
+  "updatedAt": "ISO date string"      
+}
+```
 
 ### Key Files & Responsibilities
 
@@ -209,8 +226,6 @@ npm run dev
   - **ConfirmDialog** for deletes
   - Floating Action Button (Add)
     
-
-
 
 ### Data Flow 
 
