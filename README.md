@@ -46,7 +46,7 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 - **services/** – Business logic (status transitions, error throwing).
 - **repositories/** – Data access (in-memory for demo; easy to swap for DB).
 - **models/** – Zod schemas & enums (`priority`, `status`).
-- **middleware/** – Validation (`validate*`), CORS, logging, 404, error handler.
+- **middleware/** – Validation (`validate`).
 - **utils/** – `uuid()` and `sortAndFilter()` (server-side search/sort).
 
 **Frontend (React + MUI)**
