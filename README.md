@@ -31,7 +31,6 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 - [Folder Structure](#folder-structure)
 - [Task Model](#task-model)
 - [REST API](#rest-api)
-- [Key Files & Responsibilities](#key-files-responsibilities)
 - [Data Flow](#data-flow)
 - [Time Spent](#time-spent)
 
@@ -174,7 +173,7 @@ Each task in the system follows this structure:
 }
 ```
 
-### Key Files & Responsibilities
+### REST API
 
 - **backend/src/app.js**  
   Sets up Express: `cors()`, `express.json()`, request logging, mounts `/api` routes, and registers 404/error middleware.
@@ -189,43 +188,17 @@ Each task in the system follows this structure:
   - `DELETE /api/tasks/:id`
   Each POST/PUT/PATCH is validated via Zod middleware.
 
-- **backend/src/models/taskModel.js**  
-  Zod schemas and enums:
-  - `Priority`: `low|medium|high`
-  - `Status`: `pending|completed`
-  - `TaskCreate`, `TaskUpdate`, `StatusOnlyBody`, plus `IdParams`, `TaskSearchQuery`.
-
 - **backend/src/repositories/taskRepo.js**  
   In-memory Array “DB”, includes `seed()` with 3 demo tasks and CRUD helpers.
+  
+  ### Generate Random Tasks
+  For testing or demo purposes, the backend includes a helper to quickly generate random tasks .
 
-- **backend/src/utils/sortAndFilter.js**  
-  Implements the server-side `q` search (title/description), status/priority filtering, and simple sorting.
+  ```
+    curl -X POST http://localhost:4000/api/tasks/generate/10
 
-- **frontend/src/services/api.jsx**  
-  Axios calls against `VITE_API_URL` (default `http://localhost:4000`):
-  - `list(params)` → `GET /api/tasks`  
-  - `get(id)` → `GET /api/tasks/:id`  
-  - `create(data)` → `POST /api/tasks`  
-  - `update(id, data)` → `PUT /api/tasks/:id`  
-  - `setStatus(id, status)` → `PATCH /api/tasks/:id/status`  
-  - `remove(id)` → `DELETE /api/tasks/:id`
 
-- **frontend/src/hooks/useTasks.jsx**  
-  Owns task state and exposes:
-  - `fetch(params)` for filters/search
-  - `addTask`, `updateTask`, `toggleTaskStatus(id, next)`, `removeTask`
-  - Derived `stats`: `{ total, pending, completed }`
 
-- **frontend/src/pages/Dashboard.jsx**  
-  Composes the screen:
-  - Header + **ThemeToggle**
-  - **FiltersBar** → triggers `fetch(params)`
-  - **TaskStatsCards** (totals)
-  - **TaskTable** or **TaskCarousel** (user toggle)
-  - **TaskFormDialog** for create/edit
-  - **ConfirmDialog** for deletes
-  - Floating Action Button (Add)
-    
 
 ### Data Flow 
 
