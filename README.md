@@ -1,12 +1,27 @@
-# Task Management App 
+# Task Management App <img src="https://github.com/user-attachments/assets/7c944f2b-c9df-4204-a550-3b9076b67042" alt="helfy_icon" width="40" style="vertical-align: middle; margin-left: 8px;" />
 
 A modern full-stack **Task Management** application: **React (Vite) + Material UI** on the frontend, and **Node.js + Express + Zod** on the backend.  
 Clean dashboard with **table & carousel views**, filters, stats, dialogs for create/edit, and strict server-side validation.
-<img width="682" height="378" alt="addTask" src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" />
-<img width="1272" height="545" alt="TaskCarousel" src="https://github.com/user-attachments/assets/6b237038-92a0-4e45-b2d8-cf6e10662157" />
-<img width="1276" height="608" alt="TaskTable" src="https://github.com/user-attachments/assets/529bb232-d360-482b-b7ee-da61632e45cc" />
 
 ---
+
+## Screenshots
+
+<p align="center" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
+  <span style="display:inline-flex; flex-direction:column; align-items:center;">
+    <img src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" alt="addTask" width="300" />
+    <sub><b>addTask.png</b></sub>
+  </span>
+  <span style="display:inline-flex; flex-direction:column; align-items:center;">
+    <img src="https://github.com/user-attachments/assets/529bb232-d360-482b-b7ee-da61632e45cc" alt="TaskTable" width="300" />
+    <sub><b>TaskTable.png</b></sub>
+  </span>
+  <span style="display:inline-flex; flex-direction:column; align-items:center;">
+    <img src="https://github.com/user-attachments/assets/6b237038-92a0-4e45-b2d8-cf6e10662157" alt="TaskCarousel" width="300" />
+    <sub><b>TaskCarousel.png</b></sub>
+  </span>
+</p>
+
 
 ## Table of Contents
 - [Architecture](#architecture)
