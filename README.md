@@ -164,7 +164,7 @@ Each task in the system follows this structure:
 {
   "id": "string",            // Unique identifier (UUID)
   "title": "string",        
-  "description": "string",   /
+  "description": "string",   
   "priority": "low | medium | high",  // Priority level
   "status": "pending | completed",    // Current status
   "dueDate": "ISO date string",       
