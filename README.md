@@ -31,14 +31,11 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 - [Task Model](#task-model)
 - [REST API](#rest-api)
 - [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [Quick cURL Tests](#quick-curl-tests)
-- [UI/Design Notes](#uidesign-notes)
-- [Troubleshooting](#troubleshooting)
-- [Time & Effort Breakdown (~4h)](#time--effort-breakdown-4h)
-- [Requirements Snapshot](#requirements-snapshot)
-- [Favicon / App Icon](#favicon--app-icon)
-- [License](#license)
+- [Key Files & Responsibilities](#Key-Files-Responsibilities)
+- [Data Flow](#dataflow)
+- [Time Spent](#timespent)
+
+
 
 ---
 
@@ -83,6 +80,24 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 
 ---
 
+## Getting Started
+
+Follow these steps to **clone and run** the project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/YourUsername/TaskManagementApp.git
+cd TaskManagementApp
+
+# 2. Start the frontend
+cd frontend
+npm install
+npm run dev
+
+# 3. Start the backend (in a new terminal)
+cd ../backend
+npm install
+npm run dev
 
 ## Folder Structure
         
@@ -106,20 +121,20 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
                 │ ├─ middleware/
                 │ │ ├─ validate.js # Middleware for input validation
                 │ ├─ utils/
-                │ │ ├─ id.js # Utility for generating IDs (e.g., using `uuid`)
-                │ │ └─ sortAndFilter.js # Helper to sort/filter tasks server-side
-                │ └─ config/ # Optional folder for environment, logger, constants
+                │ │ ├─ id.js # Utility for generating IDs 
+                │ │ └─ sortAndFilter.js # Helper to sort/filter tasks
+                │ └─ config/ # Optional folder for environment var
                 │
                 ├─ frontend/
                 │ ├─ package.json
                 │ ├─ package-lock.json
                 │ ├─ vite.config.js # Vite configuration file
-                │ ├─ index.html # HTML template
+                │ ├─ index.html 
                 │ └─ src/
-                │ ├─ main.jsx # Main entry point for React
-                │ ├─ App.jsx # Root component for your app
+                │ ├─ main.jsx 
+                │ ├─ App.jsx 
                 │ ├─ assets/
-                │ │ └─ logo.jpeg # Any static assets, like your logo
+                │ │ └─ logo.jpeg # helfy logo
                 │ ├─ pages/
                 │ │ └─ Dashboard.jsx # The main screen component
                 │ ├─ components/
@@ -135,7 +150,7 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
                 │ └─ services/
                 │ └─ api.jsx # Axios wrapper for API calls to backend
                 │
-                └─ README.md # Project's readme file        
+                └─ README.md      
 
  
 
@@ -190,8 +205,11 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
   - **TaskFormDialog** for create/edit
   - **ConfirmDialog** for deletes
   - Floating Action Button (Add)
+    
 
-### Data Flow (Request Lifecycle)
+
+
+### Data Flow 
 
 1. **Dashboard / FiltersBar** triggers `useTasks.fetch(params)`.  
 2. **api.jsx** performs `GET /api/tasks` with `q/status/priority`.  
