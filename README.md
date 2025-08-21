@@ -198,8 +198,6 @@ Each task in the system follows this structure:
     curl -X POST http://localhost:4000/api/tasks/generate/10
 
 
-
-
 ### Data Flow 
 
 1. **Dashboard / FiltersBar** triggers `useTasks.fetch(params)`.  
