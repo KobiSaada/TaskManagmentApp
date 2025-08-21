@@ -97,7 +97,7 @@ npm run dev
 # 3. Start the backend (in a new terminal)
 cd ../backend
 npm install
-npm run dev```
+npm run dev```md
 
 
 
