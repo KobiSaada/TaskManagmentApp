@@ -11,7 +11,7 @@ Clean dashboard with **table & carousel views**, filters, stats, dialogs for cre
 
 <p align="center" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
   <span style="display:inline-flex; flex-direction:column; align-items:center;">
-    <img src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" alt="addTask" width="290" />
+    <img src="https://github.com/user-attachments/assets/650e2e13-dad9-4abd-b778-ca142e090a88" alt="addTask" width="280" />
     
   </span>
   <span style="display:inline-flex; flex-direction:column; align-items:center;">
